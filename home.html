@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ホームページ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="auth.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>ホーム</h1>
+    <p>ようこそ、<span id="user-name"></span>さん！</p>
+    <button onclick="logout()">ログアウト</button>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const name = sessionStorage.getItem('name');
+      document.getElementById('user-name').textContent = name || 'ユーザー';
+    });
+  </script>
+</body>
+</html>
