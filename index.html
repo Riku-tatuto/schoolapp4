@@ -2,10 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ログインページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ログイン</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="auth.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -20,10 +19,9 @@
         <input type="password" id="password" required />
       </div>
       <button type="submit" class="login-btn">ログイン</button>
+      <div id="error-banner" class="error-banner">ユーザー名またはパスワードが違います</div>
     </form>
-    <div id="error-banner" class="error-banner" style="display: none;">
-      ユーザー名またはパスワードが違います。
-    </div>
   </div>
+  <script src="auth.js"></script>
 </body>
 </html>
