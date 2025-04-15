@@ -1,4 +1,4 @@
-username,password,name,course,grade,class,number
-riku,pass1234,陸,SG,1,2,40
-li,1234,李,AG,33,1,3
-riku2,5678,陸2,本科,3,3,5
+username,password,name,grade,classNum,number,course
+riku,pass1234,陸,1,2,40,SG
+hanako,test456,花子,2,1,3,AG
+junta,test789,順太,3,3,15,本科
