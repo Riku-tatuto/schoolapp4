@@ -1,9 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const logoutBtn = document.getElementById("logoutBtn");
-  if (logoutBtn) {
-    logoutBtn.addEventListener("click", () => {
-      sessionStorage.removeItem("user");
-      location.href = "index.html";
-    });
-  }
+document.getElementById("logout").addEventListener("click", () => {
+  sessionStorage.removeItem("loginUser");
+  window.location.href = "index.html";
 });
