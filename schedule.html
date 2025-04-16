@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>時間割</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="logout.js" defer></script>
+  <script src="schedule.js" defer></script>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="menu">
+      <div class="menu-item" id="nav-home" onclick="location.href='home.html'">ホーム</div>
+      <div class="menu-item active" id="nav-schedule">時間割</div>
+    </div>
+    <div class="logout-wrapper">
+      <button id="logout">ログアウト</button>
+    </div>
+  </div>
+  <div class="content">
+    <h2>時間割</h2>
+    <table id="schedule-table"></table>
+  </div>
+</body>
+</html>
